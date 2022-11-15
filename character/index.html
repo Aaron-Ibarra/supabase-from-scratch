@@ -8,14 +8,14 @@
 
         <!-- title and favicon -->
         <title>Web App</title>
-        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <link rel="icon" type="image/x-icon" href="../assets/marvelstudios_logo.jpg" />
 
         <!-- js -->
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="character.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
@@ -34,16 +34,12 @@
 
     <body>
         <header>
-            <img class="logo" src="assets/marvelstudios_logo.jpg" alt="logo" />
-            <h1>MCU Characters</h1>
+            <img class="logo" src="../assets/marvelstudios_logo.jpg" alt="logo" />
+            <h1>Character Info</h1>
             <a href="../">HOME</a>
         </header>
-
         <main>
-            <section id="home-page">
-                <p>Click on a character to learn more</p>
-                <div id="character-list"></div>
-            </section>
+            <section id="detail-page"></section>
         </main>
     </body>
 </html>
