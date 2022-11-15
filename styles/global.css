@@ -33,3 +33,31 @@ header .logo {
 main {
     padding: 20px;
 }
+
+#character-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.character {
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: solid 5px black;
+    width: 200px;
+    height: 350px;
+}
+
+.character img {
+    width: 90%;
+    border-radius: 20px;
+}
