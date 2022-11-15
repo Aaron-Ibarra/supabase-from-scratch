@@ -8,3 +8,8 @@ export async function fetchCharacters() {
     const response = await client.from('mcu-characters').select('*');
     return response.data;
 }
+
+export async function fetchCharacter(id) {
+    const response = await client.from('mcu-characters').select('*').match({ id: id }).single();
+    return response.data;
+}

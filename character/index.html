@@ -8,33 +8,33 @@
 
         <!-- title and favicon -->
         <title>Web App</title>
-        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <link rel="icon" type="image/x-icon" href="../assets/marvelstudios_logo.jpg" />
 
         <!-- js -->
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
-        <script type="module" src="app.js"></script>
+        <script type="module" src="character.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
 
         <!-- css -->
-        <link rel="stylesheet" href="..styles/reset.css" />
-        <link rel="stylesheet" href="..styles/global.css" />
+        <link rel="stylesheet" href="../styles/reset.css" />
+        <link rel="stylesheet" href="../styles/global.css" />
         <!-- add link for page specific css -->
     </head>
 
     <body>
         <header>
-            <img class="logo" src="assets/marvelstudios_logo.jpg" alt="logo" />
+            <img class="logo" src="../assets/marvelstudios_logo.jpg" alt="logo" />
             <a href="../">HOME</a>
             <h1>Character Info</h1>
         </header>
         <main>
             <section id="detail-page">
-                <div id="character-info">Character Info Here</div>
+                <div id="character-info"></div>
             </section>
         </main>
     </body>
