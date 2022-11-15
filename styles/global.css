@@ -11,6 +11,21 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
 }
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: none;
+}
 
 header {
     position: sticky;
@@ -52,7 +67,9 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    border: solid 5px black;
+    border: solid 5px rgb(140, 96, 140);
+    background-color: rgb(41, 40, 40);
+    color: whitesmoke;
     width: 200px;
     height: 350px;
 }

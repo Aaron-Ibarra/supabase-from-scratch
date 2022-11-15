@@ -1,5 +1,6 @@
 export function renderCharacters(character) {
     const characterEl = document.createElement('a');
+    characterEl.href = `./character/?id=${character.id}`;
     characterEl.classList.add('character');
 
     const characterImg = document.createElement('img');
