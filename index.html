@@ -11,11 +11,11 @@
         <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
         <!-- js -->
-        <script type="module" src="app.js"></script>
         <script
             defer
             src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@1.35.7/dist/umd/supabase.min.js"
         ></script>
+        <script type="module" src="app.js"></script>
 
         <!-- fonts -->
         <!-- see https://fonts.google.com/ -->
@@ -36,16 +36,7 @@
         <main>
             <section id="home-page">
                 <p>Click on a character to learn more</p>
-                <div id="character-list">
-                    <div class="character">
-                        <img alt="Picture of Thor" src="./assets/thor.png" />
-                        <p>Thor</p>
-                    </div>
-                    <div class="character">
-                        <img alt="Picture of Iron Man" src="./assets/iron-man.png" />
-                        <p>Iron Man</p>
-                    </div>
-                </div>
+                <div id="character-list"></div>
             </section>
         </main>
     </body>
