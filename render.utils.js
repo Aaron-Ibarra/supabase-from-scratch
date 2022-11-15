@@ -16,10 +16,16 @@ export function renderCharacters(character) {
 
 export function renderCharacterInfo(character) {
     const div = document.createElement('div');
-    div.id = 'character-list';
+    div.id = 'character-info';
+
     const characterImg = document.createElement('img');
+
     const characterName = document.createElement('p');
+    characterName.classList.add('name');
+
     const characterIdentity = document.createElement('p');
+    characterIdentity.classList.add('identity');
+
     const characterAbilities = document.createElement('p');
     const characterDesc = document.createElement('p');
 
