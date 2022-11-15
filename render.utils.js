@@ -16,6 +16,7 @@ export function renderCharacters(character) {
 
 export function renderCharacterInfo(character) {
     const div = document.createElement('div');
+    div.id = 'character-list';
     const characterImg = document.createElement('img');
     const characterName = document.createElement('p');
     const characterIdentity = document.createElement('p');
@@ -23,10 +24,11 @@ export function renderCharacterInfo(character) {
     const characterDesc = document.createElement('p');
 
     characterImg.src = `../assets/${character.img}.png`;
-    characterName.textContent = character.name;
-    characterIdentity.textContent = character.identity;
-    characterAbilities.textContent = character.abilities;
-    characterDesc.textContent = character.description;
+
+    characterName.textContent = `Name: ${character.name}`;
+    characterIdentity.textContent = `Identity: ${character.identity}`;
+    characterAbilities.textContent = `Abilities: ${character.abilities}`;
+    characterDesc.textContent = `Description: ${character.description}`;
 
     div.append(characterImg, characterName, characterIdentity, characterAbilities, characterDesc);
     return div;
