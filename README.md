@@ -63,7 +63,7 @@ Second PAGE
 
 -   displayCharacters function - for loop that calls the render Characters function and uses the returned data to append an element to the displayList div
 
-### Fetch Functions (if applicable)
+### Fetch Functions
 
 -   fetchCharacters function- grabs the data from supabase and returns all of the rows
 
